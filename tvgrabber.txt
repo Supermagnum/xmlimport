@@ -1,0 +1,15 @@
+!/bin/bash
+# change to /config/data/ as the ./tv_grab_file grabs xml files from there
+cd /config/data
+#remove old data
+rm /config/data/*.xml
+#download new data:
+wget https://iptv-org.github.io/epg/guides/no/allente.se.epg.xml
+
+wget https://iptv-org.github.io/epg/guides/fi/allente.se.epg.xml
+
+wget https://iptv-org.github.io/epg/guides/fi/telkussa.fi.epg.xml
+
+wget https://iptv-org.github.io/epg/guides/re/canalplus-reunion.com.epg.xml
+
+/usr/bin./tv_grab_file
