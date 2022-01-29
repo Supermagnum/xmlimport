@@ -14,5 +14,8 @@ wget https://iptv-org.github.io/epg/guides/fi/allente.se.epg.xml
 wget https://iptv-org.github.io/epg/guides/fi/telkussa.fi.epg.xml
 #
 wget https://iptv-org.github.io/epg/guides/re/canalplus-reunion.com.epg.xml
+#
+wget https://iptv-org.github.io/epg/guides/uk/sky.com.epg.xml
 #runs the grabber:
-/usr/bin./tv_grab_file
+cd /usr/bin
+./tv_grab_file
