@@ -3,13 +3,13 @@
 cd /config/data
 #remove old data
 rm /config/data/*.xml
-#download new data:
+#download new data, these can be adjusted to include other free xmltv file URLs::
 wget https://iptv-org.github.io/epg/guides/no/allente.se.epg.xml
-
+#
 wget https://iptv-org.github.io/epg/guides/fi/allente.se.epg.xml
-
+#
 wget https://iptv-org.github.io/epg/guides/fi/telkussa.fi.epg.xml
-
+#
 wget https://iptv-org.github.io/epg/guides/re/canalplus-reunion.com.epg.xml
-
+#runs the grabber:
 /usr/bin./tv_grab_file
