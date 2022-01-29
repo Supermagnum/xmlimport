@@ -1,9 +1,11 @@
 !/bin/bash
-# change to /config/data/ as the ./tv_grab_file grabs xml files from there
+# change to /config/data/ as the ./tv_grab_file grabs xml files from there.
+#make sure that the /config/data folder exists before usage.
+#run this file daily by crontab entry.
 cd /config/data
 #remove old data
 rm /config/data/*.xml
-#download new data, these can be adjusted to include other free xmltv file URLs::
+#download new data, these can be adjusted to include other free xmltv file URLs:
 wget https://iptv-org.github.io/epg/guides/no/allente.se.epg.xml
 #
 wget https://iptv-org.github.io/epg/guides/fi/allente.se.epg.xml
